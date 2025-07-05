@@ -12,7 +12,8 @@
             <h1 class="navbar-brand">User Page</h1>
             <div class="navbar-nav">
                 {% if request.cookies.get('access_token') %}
-                    <a href="/">Home</a>
+                    <a href="/">Dashboard</a>
+                    <a href="/employees">View Employees</a>
                     <a href="/add">Add Employee</a>    
                     <a href="/logout">Logout</a>
                 {% else %}
